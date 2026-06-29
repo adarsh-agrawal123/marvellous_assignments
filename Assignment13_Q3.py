@@ -2,15 +2,17 @@
 whether it is perfect number or not.Input: 6 Output: Perfect Number'''
 
 def perfect(No):
-    if(No % 2 == 0 and No % 3 == 0):
-        return True
-    else:
-        return False
+    sum = 0
+    for i in range(1, No):
+        if(No % i == 0):
+            sum = sum + i
+    
+    return sum
     
 def main():
-    No = float(input("Enter number : "))
+    No = int(input("Enter number : "))
     Ans = perfect(No)
-    if(Ans == True):
+    if(Ans == No):
         print("perfect number")
     else:
         print("not perfect number")
