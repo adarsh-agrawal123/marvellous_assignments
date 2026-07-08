@@ -1,0 +1,1 @@
+'''Write a program which accepts one number and prints binary equivalent.'''
